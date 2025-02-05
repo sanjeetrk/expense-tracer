@@ -1,0 +1,155 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.home-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.dark-mode {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .home-container {
+  background: #222;
+  color: white;
+  box-shadow: none;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #777;
+}
+
+/* User Profile */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.user-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.logout-btn {
+  padding: 8px 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: darkred;
+}
+
+/* Expense Form */
+.container {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background: darkgreen;
+}
+
+/* Expense Table */
+.expense-list {
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-description {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.delete-button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background: darkred;
+}
