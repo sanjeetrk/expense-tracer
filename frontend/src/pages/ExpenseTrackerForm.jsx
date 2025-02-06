@@ -51,31 +51,21 @@ const ExpenseTrackerForm = ({ addExpense }) => {
                     />
                 </div>
 
-{/*                 <div className="input-group">
-                    <label htmlFor="amount">Amount</label>
-                    <input
-                        type="number"
-                        name="amount"
-                        value={ExpenseIfo.amount}
-                        onChange={handleChange}
-                        placeholder="Enter your amount , Expense(-v), Income(+v)"
-                        required
-                    />
-                </div> */}
-
                 <div className="input-group">
-    <label htmlFor="amount">Amount</label>
-    <input
-        type="text"  // Changed from "number" to "text"
-        inputMode="numeric"  // Hints mobile to show number keyboard
-        name="amount"
-        value={ExpenseIfo.amount}
-        onChange={handleChange}
-        placeholder="Enter your amount, Expense(-v), Income(+v)"
-        pattern="^-?\d*\.?\d*$"  // Allows positive/negative numbers and decimals
-        required
-    />
+  <label htmlFor="amount">Amount</label>
+  <input
+    type="text"
+    name="amount"
+    value={ExpenseIfo.amount}
+    onChange={handleChange}
+    placeholder="Enter your amount, Expense(-v), Income(+v)"
+    pattern="^-?\d*\.?\d*$" 
+    required
+  />
 </div>
+
+
+
 
                 <button type="submit" className="login-button">
                     Add Expense
